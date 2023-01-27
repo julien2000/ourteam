@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exoverflow</title>
+	<style type="text/css">
+		body{
+			background-color: #f3ccd3;
+			font-family: "segoe UI", sans-serif;
+			font-size: 100%;
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		.site_container{
+			margin: 6rem auto;
+			max-width: calc(100% - 80px);
+		}
+		.article_container{
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(256px, 1fr));
+			gap: 2rem;
+		}
+		.article_image{
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+		}
+		@media screen and(min-width: 768px){
+			.site_container{
+				max-width: 608px;
+			}
+			.article-card{
+				display: grid;
+				grid-template-rows: 220px 1fr;
+			}
+		}
+		@media screen and (min-width: 1280px){
+			.site-container{
+				max-width: 1156px;
+			}
+		}
+		.article_image img{
+			width: 100%;
+			height: auto;
+			border-radius: 20px 20px 0 0;
+		}
+		.article_card{
+			background: white;
+			border-radius: 20px;
+			transition: 0.3s;
+		}
+		.article_card:hover{
+			box-shadow: 0 4px 20px 0 rgba(34,63,123,0.2);
+			cursor: pointer;
+		}
+		.article_content{
+			padding: 2rem;
+		}
+		.article_content .card-category{
+			font-size: 0.875rem;
+			text-transform: uppercase;
+			letter-spacing: 0.1rem;
+			font-weight: 600;
+			color: #6b82a7;
+			display: block;
+			text-decoration: none;
+		}
+		.article_content .card-title{
+			margin: 2rem 0;
+			color: #22447b;
+		}
+		.article_content .card-excerpt{
+			font-style: 1rem;
+			line-height: 1.5rem;
+			color: #6b82a7;
+			margin: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="site_container">
+		<div class="article_container">
+			<article class="article_card">
+				<div class="article_image">
+					<img src="DSC_4294.jpg">
+					<div class="article_content">
+						<a href="#" class="card-category">Ecouter</a>
+						<h3 class="card-title">Suivez toutes les actualités de troto</h3>
+						<p class="card-excerpt">lorem ipsun color sit amet, consectetur adipiscing elfc. Nulla feugiat sapien blandit munc elementum dapibus.</p>
+					</div>
+				</div>
+			</article>
+			<article class="article_card">
+				<div class="article_image">
+					<img src="DSC_4294.jpg">
+					<div class="article_content">
+						<a href="#" class="card-category">Ecouter</a>
+						<h3 class="card-title">Suivez toutes les actualités de troto</h3>
+						<p class="card-excerpt">lorem ipsun color sit amet, consectetur adipiscing elfc. Nulla feugiat sapien blandit munc elementum dapibus.</p>
+					</div>
+				</div>
+			</article>
+			<article class="article_card">
+				<div class="article_image">
+					<img src="DSC_4294.jpg">
+					<div class="article_content">
+						<a href="#" class="card-category">Ecouter</a>
+						<h3 class="card-title">Suivez toutes les actualités de troto</h3>
+						<p class="card-excerpt">lorem ipsun color sit amet, consectetur adipiscing elfc. Nulla feugiat sapien blandit munc elementum dapibus.</p>
+					</div>
+				</div>
+			</article>
+			<article class="article_card">
+				<div class="article_image">
+					<img src="DSC_4294.jpg">
+					<div class="article_content">
+						<a href="#" class="card-category">Ecouter</a>
+						<h3 class="card-title">Suivez toutes les actualités de troto</h3>
+						<p class="card-excerpt">lorem ipsun color sit amet, consectetur adipiscing elfc. Nulla feugiat sapien blandit munc elementum dapibus.</p>
+					</div>
+				</div>
+			</article>
+		</div>
+	</div>
+</body>
+</html>
